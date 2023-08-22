@@ -25,6 +25,7 @@ module.exports = {
   },
   plugins: ['vue', 'prettier'],
   rules: {
+    'no-undef': 'off',
     'prettier/prettier': 'error',
     'arrow-body-style': 'off',
     'prefer-arrow-callback': 'off'
