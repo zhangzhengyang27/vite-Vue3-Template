@@ -8,8 +8,8 @@
     "build:dev": "vite build --mode dev",
     "build:prod": "vite build --mode prod",
     "preview": "vite preview",
-    "lint": "eslint --ext .js,.vue src",
-    "lint:fix": "eslint --fix --ext .js,.vue src"
+    "lint": "eslint --ext .ts,.vue,.js",
+    "prepare": "husky install"
   },
   "dependencies": {
     "pinia": "^2.0.33",
@@ -17,10 +17,14 @@
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
+    "@types/node": "^20.5.1",
     "@vitejs/plugin-vue": "^4.1.0",
-    "@vue/eslint-config-airbnb": "^7.0.0",
-    "eslint": "^8.37.0",
-    "eslint-plugin-vue": "^9.10.0",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.2",
     "sass": "^1.61.0",
     "sass-loader": "^13.2.2",
     "vite": "^4.2.0"

@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
   // {
@@ -16,9 +16,9 @@ const routes = [
   //     name: 'helloWorld',
   //     component: () => import('@/components/HelloWorld.vue'),
   // },
-];
+]
 const router = createRouter({
   history: createWebHistory(),
-  routes,
-});
-export default router;
+  routes
+})
+export default router
