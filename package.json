@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "lint": "eslint --ext .vue,.js ./src",
     "prepare": "husky install",
-    "commit": "git add . && git-cz"
+    "commit": "git add . &&  git cz"
   },
   "dependencies": {
     "pinia": "^2.0.33",
@@ -23,7 +23,9 @@
     "@types/node": "^20.5.1",
     "@vitejs/plugin-vue": "^4.1.0",
     "commitizen": "^4.3.0",
+    "commitlint-config-cz": "^0.13.3",
     "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^7.0.0",
     "eslint": "^8.47.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
@@ -43,7 +45,10 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".cz-config.cjs"
     }
   }
 }
